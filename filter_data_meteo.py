@@ -21,16 +21,16 @@ habille_chaud_homme=["un t-shirt", "un bermuda", "une paire de basket"]
 # Fonction de recommandation selon le sexe et la temperatures entrees
 def todayOutfit(temperature_actuelle,sexe):
   if sexe == "F":
-    if float(temperature_actuelle) <= 10.0:
+    if float(temperature_actuelle) <= 11.0:
       print("L'oufit du jour pourrait etre : " + str(habille_froid_femme))
-    elif 11<= float(temperature_actuelle) <= 25.0:
+    elif 11.0 < float(temperature_actuelle) <= 25.0:
       print( "L'oufit du jour pourrait etre : " + str(habille_tempere_femme))
     else:
       print("L'oufit du jour pourrait etre : " + str(habille_chaud_femme))
   else:
-      if float(temperature_actuelle) <= 10.0:
+      if float(temperature_actuelle) <= 11.0:
         print("L'oufit du jour pourrait etre : " + str(habille_froid_homme))
-      elif 11<= float(temperature_actuelle) <= 25.0:
+      elif 11.0 < float(temperature_actuelle) <= 25.0:
         print("L'oufit du jour pourrait etre : " + str(habille_tempere_homme))
       else:
         print("L'oufit du jour pourrait etre : " + str(habille_chaud_homme))
